@@ -1,14 +1,12 @@
 name: Build and Scan Images
 
 on:
-  workflow_run:
-    workflows: [Scan Repo]
-    types: [completed]
+  pull_request:
     branches: [master]
   workflow_dispatch:
 
 jobs:
-  build-scan-push:
+  build-scan:
     name: 🛡️ Build and Scan
     runs-on: ubuntu-latest
     permissions:

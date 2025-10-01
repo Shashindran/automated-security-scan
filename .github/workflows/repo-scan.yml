@@ -25,7 +25,7 @@ jobs:
           version: v0.66.0
 
       - name: 🔬 Run Trivy vulnerability scanner in repo (SCA)
-        uses: aquasecurity/trivy-action@v0.28.0
+        uses: aquasecurity/trivy-action@0.28.0
         with:
           scanners: "vuln,config,secret"
           scan-type: "fs"

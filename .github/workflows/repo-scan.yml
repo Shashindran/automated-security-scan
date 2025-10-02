@@ -34,7 +34,6 @@ jobs:
           severity: "CRITICAL,HIGH"
           format: "sarif"
           output: "trivy-fs-results.sarif"
-          input: "--skip-version-check"
           skip-setup-trivy: true
 
       - name: 📤 Upload Trivy filesystem scan results
